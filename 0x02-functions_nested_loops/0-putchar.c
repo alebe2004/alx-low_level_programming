@@ -1,9 +1,10 @@
 #include "main.h"
 
 /**
-  * main - Entry point
+  * main - calls the function _putchar
   *
-  * Return: Always 0
+  *Description: programs that prints Holberton, followed by a new line
+  * Return: 0
   */
 int main(void)
 {
