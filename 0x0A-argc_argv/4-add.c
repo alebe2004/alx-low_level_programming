@@ -30,7 +30,7 @@ for (j = 0; j < length; j++)
 {
 	if (isdigit(*(ptr + j)) == 0)
 	{
-		printf("Error \n");
+		printf("Error\n");
 		return (1);
 	}
 }
