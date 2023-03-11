@@ -5,11 +5,11 @@
 #include <stdbool.h>
 
 /**
- * coinConverter - Helper function that does all the mathematics
+ * coinconverter - Helper function that does all the mathematics
   * @i: passed in variable from main for calculations
   * Return: The number of coins needed minimum for thepassed in variable
   */
-int coinConverter(int i)
+int coinconverter(int i)
 {
 	int count = 0;
 
@@ -60,7 +60,7 @@ if (i < 0)
 	printf("0\n");
 	else
 {
-	coin = coinConverter(i);
+	coin = coinconverter(i);
 
 printf("%d\n", coin);
 }
