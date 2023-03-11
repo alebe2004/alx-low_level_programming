@@ -12,7 +12,7 @@
 int main(int argc, char *argv[])
 {
 	int i, j;
-	
+
 	if (argc == 1 || argc == 2)
 	{
 		printf("error\n");
