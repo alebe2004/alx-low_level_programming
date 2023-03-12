@@ -50,7 +50,7 @@ int main(int argc, char *argv[])
 	coin = 0;
 if (argc != 2)
 {
-printf("Error\n");
+printf("error\n");
 return (1);
 }
 
