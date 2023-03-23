@@ -1,11 +1,10 @@
-#include "variadic_function.h"
+#include "variadic_functions.h"
+#include <stdarg.h>
+#include <stdio.h>
 /**
- *sum_them_all - sum all the parameters.
-(* a black line
- *@n; the number of parameters
- * Description: this function sum all the parameters)?
-(* section header: the header of this function is variadic_function.h)*
- * Return: this return the sum of the parameters.
+ * sum_them_all - Entry point
+(* @n: variadic inputs
+ * Return: sum
  */
 int sum_them_all(const unsigned int n, ...)
 
