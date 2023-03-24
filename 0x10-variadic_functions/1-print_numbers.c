@@ -1,29 +1,27 @@
-#include "variadic_function.h"
+#include "variadic_functions.h"
+#include <stdarg.h>
+#include <stdio.h>
 /**
- * print_numbers - print all the parametes.
-(* a black line
- *@separator: the number of parametes
- *@n: the number of parameters
- *Description: this function prints all the parameters)?
-(* section header: the header of this function is variadic_function.h)*
-*Return: no retunr.
-*/
+ * print_numbers - Entery point
+ * @separator: comma space
+ * @n: elements to be printed
+ * Return: void
+ */
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
-	va_list num;
+	char *sep;
 	unsigned int i;
+	va_list list;
 
-	i = 0;
-
-	va_start(num, n);
-	while (i < n)
-	{
-		printf("%d", va_arg(num, unsigned int));
-		if (i < (n - 1) && separator != NULL)
-
-			printf("%s", separator);
-		i++;
-	}
-va_end(num);
-printf("\n");
+	if (separator == NULL || *separator == 0)
+		sep = "";
+	else
+		sep = (char *) separator;
+	va_start(list, n);
+	if (n > 0)
+		printf("%d", va_arg(list, int));
+	for (i = 1; i < n; i++)
+		printf("%s%d", sep, va_arg(list, int));
+	printf("\n");
+	va_end(list);
 }
