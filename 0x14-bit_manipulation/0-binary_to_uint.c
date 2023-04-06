@@ -1,4 +1,6 @@
-#include "stddef.h"
+#include "main.h"
+#include <stddef.h>
+
 /**
  * binary_to_unit - Entry point
  * @b: const char
