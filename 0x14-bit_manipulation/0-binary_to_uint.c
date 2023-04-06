@@ -2,10 +2,11 @@
 #include <stddef.h>
 
 /**
- * binary_to_unit - Entry point
+ * binary_to_uint - Entry point
  * @b: const char
  * Return: 0
  */
+
 unsigned int binary_to_uint(const char *b)
 {
 	unsigned int res = 0;
